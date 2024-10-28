@@ -1,0 +1,200 @@
+/* Font Styles */
+@import url("https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800");
+
+/* Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Header (continued) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f8f8f8;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  color: #ff6600;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.header-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.header-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card Styles */
+.card {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image1 {
+  width: 100%;
+  height: 290px;
+  background-size: cover;
+  background-position: center;
+}
+.card-image2 {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+.card-image3 {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+
+  color: #666;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-left .company-name {
+    font-size: 1.25rem;
+  }
+
+  .header-right .header-buttons {
+    margin-right: 10px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-left {
+    margin-bottom: 10px;
+  }
+
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+  }
+
+  .card-description {
+    font-size: 0.875rem;
+  }
+}
